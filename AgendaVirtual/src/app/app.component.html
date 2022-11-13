@@ -1,0 +1,31 @@
+<div class="contenedor__principal">
+    <section class="contenedor__menu">
+        <div class="contenedor__logo">
+            <h2>AGENDA VIRTUAL</h2>
+            <img class="icono__agenda" src="../../../../assets/agenda.svg">
+        </div>
+        <div class="contenedor__enlaces">
+            <button class="enlace__menu"  routerLink="/agenda-virtual/perfil" routerLinkActive="sel__true">PERFIL</button>
+            <button class="enlace__menu"  routerLink="/agenda-virtual/servicios" routerLinkActive="sel__true">SERVICIOS</button>
+            <button class="enlace__menu"  routerLink="/agenda-virtual/historial" routerLinkActive="sel__true">HISTORIAL</button>
+            <button class="enlace__menu"  routerLink="/agenda-virtual/opciones" routerLinkActive="sel__true">OPCIONES</button>
+        </div>
+    </section>
+    <section class="contenedor__servicios">
+        <header class="contenedor__header">
+            <div class="barra__menu">
+                <div class="contenedor__usuario">
+                    <h1>{{usuario.nombre}}</h1>
+                </div>
+                <div>
+                    <ul class="listado__iconos">
+                        <li><i class="fa-solid fa-bell"></i></li>
+                        <li><i class="fa-solid fa-circle-question"></i></li>
+                        <li><i class="fa-solid fa-power-off"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <router-outlet></router-outlet>
+    </section>
+</div>

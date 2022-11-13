@@ -1,0 +1,44 @@
+<div class="caja__creacion__solicitud">
+    <form action="">
+        <div class="filas">
+            <div>
+                <label class="label__form" for="">Nombre/Razon social</label>
+                <input class="input__style" type="text" name="nombre" [(ngModel)]="datosPerfil.nombre" disabled>
+            </div>
+            <div>
+                <label class="label__form" for="nit">Nit</label>
+                <input class="input__style" type="text" id="nit" name="nit" [(ngModel)]="datosPerfil.nit" disabled>
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="direccion">Dirección</label>
+                <input class="input__style" type="text" id="direccion" name="direccion" [(ngModel)]="datosPerfil.direccion">
+            </div>
+            <div>
+                <label class="label__form" for="celular">Celular</label>
+                <input class="input__style" type="text" id="celular" name="celular" [(ngModel)]="datosPerfil.celular">
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="telefono">Telefono</label>
+                <input class="input__style" type="text" id="telefono" name="telefono" [(ngModel)]="datosPerfil.telefono">
+            </div>
+            <div>
+                <label class="label__form" for="email">Correo electronico</label>
+                <input class="input__style" type="text" id="email" name="correo" [(ngModel)]="datosPerfil.correo">
+            </div>
+        </div>
+        <div class="fila__final">
+            <div class="caja__btn">
+                <div>
+                    <button class="boton__guardar" (click)="updatePerfil()">Guardar</button>
+                </div>
+                <div>
+                    <button class="boton__cancelar" routerLink="/agenda-virtual/perfil">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

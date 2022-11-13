@@ -1,0 +1,116 @@
+.caja__btn{
+    margin-top: 90px;
+}
+
+.button__insertar{
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(89, 133, 247, 1);
+    border: none;
+    margin: 10px 10px 5px 10px;
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0px rgb(4, 9, 15);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button__insertar:hover{
+    background-color: rgb(46, 103, 247);
+    transition: all .2s;
+}
+
+.encabezado__servicios{
+    display: flex;
+    background-color: rgba(148, 148, 148, 1);
+    margin: 10px 10px 10px 10px;
+    padding: 15px 20px;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0px rgb(35, 53, 75);
+}
+
+.encabezado__servicios div{
+    width: 20%;
+    text-align: center;
+}
+
+.encabezado__servicios h3{
+    margin: auto;
+    color: rgb(240, 240, 240);
+    font-size: 13px;
+}
+
+.caja__solicitud{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 5px 10px 0px 10px;
+    overflow: hidden;
+}
+
+
+/* Formulario */
+.contenedor__formulario{
+    height: 0px;
+    overflow: hidden;
+
+}
+
+.mostrar__formulario{
+    transition: all 2s;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    margin: 50px auto;
+    width: 35%;
+    background-color: rgb(211, 211, 211);
+    box-shadow: 5px 4px 5px -3px rgb(4, 9, 15);
+}
+
+.form__input{
+    border: none;
+    color: rgb(56, 56, 56);
+    padding: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.formulario h4{
+    font-size: 12px;
+    color: rgb(58, 57, 57);
+    margin-bottom: 5px;
+}
+
+.formulario h4 b{
+    font-size: 12px;
+    color: rgb(207, 4, 4);
+}
+
+.observaciones{
+    min-height: 80px;
+    resize: none;
+    max-width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+#boton__crear{
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    background-color: rgb(102, 102, 243);
+    padding: 10px 15px;
+    margin: auto;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 4px 5px -3px rgb(4, 9, 15);
+}

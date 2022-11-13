@@ -1,0 +1,128 @@
+.detalle__solicitud{
+    margin-bottom: 5px;
+}
+.caja__previsualizacion{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(77, 115, 145);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0px rgb(35, 53, 75);
+}
+
+.detalle__cerrado{
+    overflow: hidden;
+    height: 0px;
+    transition: 0.2s;
+}
+
+.detalle__abrir{
+    overflow: hidden;
+    height: 320px;
+    transition: 0.2s;
+    margin-bottom: 3px;
+}
+
+.caja__previsualizacion div{
+    width: 20%;
+}
+
+.caja__previsualizacion div h3{
+    color: rgb(247, 247, 247);
+    font-size: 15px;
+}
+
+.contenedor__detalles{
+    background-color: rgb(77, 115, 145);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px 0px 15px;
+    box-shadow: 1px 1px 2px 0px rgb(35, 53, 75);
+}
+
+.informacion__detalles{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.fila1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 5px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.fila2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 5px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.fila3{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.obs__detalle{
+    overflow: scroll;
+    height: 100px;
+}
+
+.grid div{
+    font-size: 10px;
+    border: 2px solid rgb(175, 175, 175);
+    padding: 15px 0px 15px 10px;
+    color: rgb(82, 82, 82);
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.botones__detalles{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.botones__detalles div{
+    border: none;
+}
+
+.botones__detalles button{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px 4px 0px rgb(4, 9, 15);
+    cursor: pointer;
+}
+
+.button__Mod{
+    background-color: rgba(89, 133, 247, 1);
+    transition: all .2s;
+}
+
+.button__C{
+    background-color: rgb(247, 54, 54);
+    transition: all .2s;
+}
+
+.button__Mod:hover{
+    background-color: rgb(46, 103, 247);
+    transition: all .2s;
+}
+
+.button__C:hover{
+    background-color: rgb(228, 40, 40);
+    transition: all .2s;
+}

@@ -1,0 +1,40 @@
+<div  class="detalle__solicitud" *ngFor="let servicio of servicios" >
+    <div class="caja__previsualizacion" (dblclick)="mostrarDetalle(servicio.id)" (click)="mostrarDetalle(0)">
+        <div><h3>{{servicio.id}}</h3></div>
+        <div><h3>{{servicio.tipo_servicio}}</h3></div>
+        <div><h3>{{servicio.fecha_solicitada}}</h3></div>
+        <div><h3>{{servicio.hora_solicitada}}</h3></div>
+        <div><h3>{{servicio.estado}}</h3></div>
+    </div>
+    <div >
+        <section class="contenedor__detalles" [ngClass]="verDetalle == servicio.id ? 'detalle__abrir' : 'detalle__cerrado'">
+            <div class="informacion__detalles" id="casillas__detalle">
+                <div class="grid fila1">
+                    <div><h3><b>Tipo de servicio:</b> {{servicio.tipo_servicio}}</h3></div>
+                    <div><h3><b>Fecha solicitada:</b> {{servicio.fecha_solicitada}}</h3></div>
+                    <div><h3><b>Hora solicitada:</b> {{servicio.hora_solicitada}}</h3></div>
+                    <div><h3><b>Tipo de vehiculo:</b> {{servicio.tipo_vehiculo}}</h3></div>
+                </div>
+                <div class="grid fila2">
+                    <div><h3><b>Placa:</b> {{servicio.placa}}</h3></div>
+                    <div><h3><b>Conductor:</b> {{servicio.conductor}}</h3></div>
+                    <div><h3><b>Cedula:</b> {{servicio.numero_ident}}</h3></div>
+                    <div><h3><b>Numero de contacto:</b> {{servicio.numero_contacto}}</h3></div>
+                </div>
+                <div class="grid fila3">
+                    <div class="obs__detalle"><h3><b>Observaciones:</b><br><br/>{{servicio.observaciones}}</h3></div>
+                    <section class="botones__detalles">
+                        <div>
+                            <button class="button__Mod" [routerLink]="['/agenda-virtual/servicios/editar', servicio.id]">Modificar</button>
+                        </div>
+                        <div>
+                            <BUtton class="button__C" (click)="eliminarServicio(servicio.id)">Cancelar</BUtton>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+

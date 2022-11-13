@@ -1,0 +1,33 @@
+<div class="contenedor__perfil">
+    <div class="filas">
+        <div>
+            <div><h3>Nombre/Razon social</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.nombre}}</h4></div>
+        </div>
+        <div>
+            <div><h3>Nit</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.nit}}</h4></div>
+        </div>
+        <div>
+            <div><h3>Dirección</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.direccion}}</h4></div>
+        </div>
+    </div>
+    <div class="filas">
+        <div>
+            <div><h3>Celular</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.celular}}</h4></div>
+        </div>
+        <div>
+            <div><h3>Telefono</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.telefono}}</h4></div>
+        </div>
+        <div>
+            <div><h3>Correo electronico</h3></div>
+            <div class="dato__perfil"><h4>{{perfil.correo}}</h4></div>
+        </div>
+    </div>
+    <div class="modificar__perfil">
+        <button class="boton__perfil" [routerLink]="['/agenda-virtual/perfil/editar-perfil', perfil.id]">Modificar</button>
+    </div>
+</div>

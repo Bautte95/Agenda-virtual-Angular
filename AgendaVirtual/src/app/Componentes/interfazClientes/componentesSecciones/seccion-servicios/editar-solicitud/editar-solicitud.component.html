@@ -1,0 +1,68 @@
+<div class="caja__creacion__solicitud">
+    <div class="titulo__form"><h1>Editar solicitud</h1></div>
+    <div class="nota__form">
+        <p><b>Nota: </b>El tipo de servicio, la fecha y hora solicitada no se puede editar, en caso de que requiera cambiar estos datos debe cancelar la solicitud actual y crear una nueva.</p>
+    </div>
+    <form action="">
+        <div class="filas">
+            <div>
+                <label class="label__form" for="tipo_servicio">Tipo de servicio</label>
+                <input class="input__style" name="tipo_servicio" [(ngModel)]="datoServicio.tipo_servicio"  type="text" id="htipo_servicio" disabled>
+            </div>
+            <div>
+                <label class="label__form" for="fecha_solicitud">Fecha solicitada</label>
+                <input class="input__style" name="fecha_solicitada" [(ngModel)]="datoServicio.fecha_solicitada" type="text" id="fecha_solicitud" disabled>
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="hora_solicitud">hora solicitada</label>
+                <input class="input__style" name="hora_solicitada" [(ngModel)]="datoServicio.hora_solicitada"  type="text" id="hora_solicitud" disabled>
+            </div>
+            <div>
+                <label class="label__form" for="tipo_vehiculo">Tipo de vehiculo</label>
+                <select class="input__style" name="tipo_vehiculo" [(ngModel)]="datoServicio.tipo_vehiculo" id="tipo_vehiculo">
+                    <option value=""></option>
+                    <option value="mula">Mula</option>
+                    <option value="contenedor">Mula contenedor</option>
+                    <option value="dobleT">Doble troque</option>
+                    <option value="sencillo">Sencillo</option>
+                </select>
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="placa">Placa vehiculo</label>
+                <input class="input__style" name="placa" [(ngModel)]="datoServicio.placa"  type="text" id="placa" placeholder="ingresa nueva placa">
+            </div>
+            <div>
+                <label class="label__form" for="nombre_conductor">Nombre conductor</label>
+                <input class="input__style" type="text" name="conductor" [(ngModel)]="datoServicio.conductor"  id="nombre_conductor" placeholder="ingresa nuevo nombre">
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="cedula">Numero de identificación</label>
+                <input class="input__style" type="text" [(ngModel)]="datoServicio.numero_ident" name="numero_ident"  id="cedula" placeholder="ingresa nuevo id">
+            </div>
+            <div>
+                <label class="label__form" for="numero_contacto">Numero de contacto</label>
+                <input class="input__style" type="text" [(ngModel)]="datoServicio.numero_contacto" name="numero_contacto"  id="numero_contacto" placeholder="ingresa nuevo numero">
+            </div>
+        </div>
+        <div class="fila__final">
+            <div class="caja__obs">
+                <label class="label__form" for="observaciones">Observaciones</label>
+                <textarea class="input__style observaciones" name="observaciones" [(ngModel)]="datoServicio.observaciones"  type="text" id = "observaciones"></textarea>
+            </div>
+            <div class="caja__btn">
+                <div>
+                    <button class="boton__crear" (click)="updateSolicitud()">Editar solicitud</button>
+                </div>
+                <div>
+                    <button class="boton__cancelar" routerLink="/agenda-virtual/servicios">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

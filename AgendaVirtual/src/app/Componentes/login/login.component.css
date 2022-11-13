@@ -1,0 +1,340 @@
+/* @import '~normalize.css'; */
+body{
+    background-image: linear-gradient(rgba(10, 10, 10, 0.192), rgba(0, 0, 0, 0.199)), url("../../../assets/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 150px;
+    font-family: sans-serif;
+}
+
+
+/* diseño de login */
+
+.contenedor__login{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.952);
+    border-radius: 20px;
+}
+
+.contenedor__login div{
+    margin: 70px 25px;
+    transition: all 500ms;
+    text-align: center;
+}
+
+.contenedor__formulario form h2{
+    color: rgba(224, 86, 0, 0.93);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.contenedor__formulario form input{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+    font-size: 13px;
+    outline: none;
+    color: rgb(53, 53, 53);
+    font-weight: 400;
+}
+
+.contenedor__formulario form input::placeholder{
+    color: rgb(151, 150, 150);
+}
+
+.contenedor__formulario form button{
+    padding: 8px 25px;
+    margin-top: 25px;
+    border: none;
+    background-color: rgba(224, 86, 0, 0.93);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    left: 20px;
+}
+
+.contenedor__formulario form h4{
+    color: rgb(122, 122, 122);
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.portada_login{
+    width: 250px;
+}
+
+.portada_login h2{
+    font-size:18px;
+    color: rgb(151, 151, 151);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.icono__agenda{
+    width: 100px;
+    text-align: center;
+}
+
+/* Diseño del footer */
+
+footer{
+    padding: 50px 30px 0px 30px;
+    background-color: rgb(23, 29, 32);
+}
+
+.contenedor__footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.contenedor__footer h2{
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: rgb(236, 235, 235);
+}
+
+.contenedor__footer a{
+    color: rgb(192, 191, 191);
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.cajas__footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.cajas__footer i{
+    padding-right: 5px;
+}
+
+.contener_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__footer img{
+    width: 200px;
+}
+
+.cajas__footer li{
+    list-style-type: none;
+    color: rgb(192, 191, 191);
+    padding-bottom: 2px;
+}
+
+.caja__coyright{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(129, 128, 128);
+    font-size: 13px;
+    padding-bottom: 20px;
+} 
+
+.caja__coyright hr{
+    border: none;
+    height: 1px;
+    background-color: rgb(153, 149, 149);
+    margin-bottom: 20px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 900px) {
+
+    body{
+        padding-top: 0;
+    }
+
+    .portada_login{
+        display: none;
+    }
+
+    .contenedor__login{
+        width: 50%;
+        margin-top: 80px;
+    }
+
+    .logo__footer img{
+        width: 150px;
+    }
+
+    
+    .contenedor__footer{
+        font-size: 10px;
+    }
+
+    .contenedor__footer h2{
+        font-size: 12px;
+    }
+
+    .caja__coyright{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    body{
+        padding-top: 0;
+    }
+    .menu__nav{
+        display: none;
+    }
+
+    .portada_login{
+        display: none;
+    }
+
+    .contenedor__login{
+        width: 50%;
+        margin-top: 80px;
+    
+    }
+
+    footer{
+        padding-top: 35px;
+    }
+
+    .logo__footer img{
+        width: 150px;
+    }
+    
+    .contenedor__footer{
+        font-size: 12px;
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .contenedor__footer h2{
+        font-size: 12px;
+    }
+
+    .cajas__footer{
+        margin-top: 15px;
+        width: 75%;
+    }
+
+    .caja__coyright{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    body{
+        padding-top: 0;
+    }
+    .menu__nav{
+        display: none;
+    }
+
+    .portada_login{
+        display: none;
+    }
+
+    .contenedor__login{
+        width: 65%;
+        margin-top: 80px;
+    
+    }
+
+    footer{
+        padding-top: 35px;
+    }
+
+    .logo__footer img{
+        width: 150px;
+    }
+    
+    .contenedor__footer{
+        font-size: 12px;
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .contenedor__footer h2{
+        font-size: 12px;
+    }
+
+    .cajas__footer{
+        margin-top: 15px;
+        width: 75%;
+    }
+
+    .caja__coyright{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width: 384px) {
+
+    body{
+        padding-top: 0;
+    }
+    .menu__nav{
+        display: none;
+    }
+
+    .portada_login{
+        display: none;
+    }
+
+    .contenedor__login{
+        width: 75%;
+        margin-top: 80px;
+    
+    }
+
+    footer{
+        padding-top: 35px;
+    }
+
+    .logo__footer img{
+        width: 150px;
+    }
+    
+    .contenedor__footer{
+        font-size: 12px;
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+    }
+
+    .contenedor__footer h2{
+        font-size: 12px;
+    }
+
+    .cajas__footer{
+        margin-top: 15px;
+        width: 75%;
+    }
+
+    .caja__coyright{
+        font-size: 10px;
+    }
+}
+
+
+

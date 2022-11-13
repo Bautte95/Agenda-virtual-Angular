@@ -1,0 +1,69 @@
+<div class="caja__creacion__solicitud">
+    <div class="titulo__form"><h1>Nueva solicitud</h1></div>
+    <form action="">
+        <div class="filas">
+            <div>
+                <label class="label__form" for="tipo_servicio">Tipo de servicio<b>*</b></label>
+                <select class="input__style" name="tipo_servicio" [(ngModel)]="servicio.tipo_servicio" id="tipo_servicio">
+                    <option value=""></option>
+                    <option value="descargue">Descargue</option>
+                    <option value="cargue">Cargue</option>
+                </select>
+            </div>
+            <div>
+                <label class="label__form" for="fecha_solicitud">Fecha solicitada<b>*</b></label>
+                <input class="input__style" name="fecha_solicitada" [(ngModel)]="servicio.fecha_solicitada"  type="date" id="fecha_solicitud">
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="hora_solicitud">hora solicitada<b>*</b></label>
+                <input class="input__style" name="hora_solicitada" [(ngModel)]="servicio.hora_solicitada" type="time" id="hora_solicitud">
+            </div>
+            <div>
+                <label class="label__form" for="tipo_vehiculo">Tipo de vehiculo<b>*</b></label>
+                <select class="input__style" name="tipo_vehiculo" [(ngModel)]="servicio.tipo_vehiculo" id="tipo_vehiculo">
+                    <option value=""></option>
+                    <option value="mula">Mula</option>
+                    <option value="contenedor">Mula contenedor</option>
+                    <option value="dobleT">Doble troque</option>
+                    <option value="sencillo">Sencillo</option>
+                </select>
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="placa">Placa vehiculo<b>*</b></label>
+                <input class="input__style" name="placa" [(ngModel)]="servicio.placa" type="text" id="placa" placeholder="ingresa dato">
+            </div>
+            <div>
+                <label class="label__form" for="nombre_conductor">Nombre conductor<b>*</b></label>
+                <input class="input__style" type="text" name="conductor" [(ngModel)]="servicio.conductor" id="nombre_conductor" placeholder="ingresa dato">
+            </div>
+        </div>
+        <div class="filas">
+            <div>
+                <label class="label__form" for="cedula">Numero de identificación<b>*</b></label>
+                <input class="input__style" type="text" name="numero_ident" [(ngModel)]="servicio.numero_ident" id="cedula" placeholder="ingresa dato">
+            </div>
+            <div>
+                <label class="label__form" for="numero_contacto">Numero de contacto<b>*</b></label>
+                <input class="input__style" type="text" name="numero_contacto" [(ngModel)]="servicio.numero_contacto" id="numero_contacto" placeholder="ingresa dato">
+            </div>
+        </div>
+        <div class="fila__final">
+            <div class="caja__obs">
+                <label class="label__form" for="observaciones">Observaciones<b>*</b></label>
+                <textarea class="input__style observaciones" name="observaciones" [(ngModel)]="servicio.observaciones" type="text" id = "observaciones"></textarea>
+            </div>
+            <div class="caja__btn">
+                <div>
+                    <button class="boton__crear" (click)="enviarSolicitud()">Enviar solicitud</button>
+                </div>
+                <div>
+                    <button class="boton__cancelar" routerLink="/agenda-virtual/servicios">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

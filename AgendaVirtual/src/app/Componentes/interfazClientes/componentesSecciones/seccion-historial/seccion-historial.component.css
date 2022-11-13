@@ -1,0 +1,51 @@
+.filtro__historial{
+    margin: 100px 10px 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(218, 230, 250);
+    padding: 5px 15px;
+    box-shadow: 1px 1px 4px 0px rgb(35, 53, 75);
+}
+
+.filtro__historial div{
+    display: flex;
+    align-items: center;
+}
+
+.texto__opciones{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.opcion__date{
+    font-size: 12px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.opciones__multiples{
+    font-size: 12px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.boton__busqueda{
+    border: none;
+    background-color: rgb(102, 102, 243);
+    border-radius: 4px;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+.boton__busqueda i{
+    font-size: 12px;
+    color: white;
+}
+
+.titulo__filtro{
+    text-align: center;
+    font-size: 13px;
+    color: rgb(128, 128, 128);
+}

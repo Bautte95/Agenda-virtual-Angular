@@ -1,0 +1,118 @@
+.titulo__form{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo__form h1{
+    font-size: 25px;
+    color: rgb(70, 70, 70);
+}
+.caja__creacion__solicitud{
+    background-color: rgb(214, 229, 253);
+    margin: 120px 15px 0px 15px;
+    padding: 15px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 0px rgb(35, 53, 75);
+}
+
+.filas{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+
+.filas div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.label__form{
+    font-size: 15px;
+    color: rgb(68, 68, 68);
+}
+
+.label__form b{
+    color: red;
+    font-weight: 900;
+}
+
+.input__style{
+    color: rgb(65, 65, 65);
+    font-size: 13px;
+    height: 25px;
+    margin-top: 5px;
+    padding: 0px 5px 0px 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 2px;
+}
+
+.input__style:focus{
+    outline: ridge 2.5px rgba(38, 66, 73, 0.253);
+}
+
+.fila__final{
+    display: grid;
+    grid-template-columns: 48% 48%;
+}
+
+.fila__final div{
+    margin: 10px;
+}
+
+
+
+.caja__obs{
+    display: flex;
+    flex-direction: column;
+}
+
+.observaciones{
+    height: 120px;
+    padding: 5px 5px 5px 5px;
+    resize: none;
+}
+
+.caja__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.caja__btn button{
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    margin-left: 5px;
+    box-shadow: 1px 1px 4px 0px rgb(4, 9, 15);
+    cursor: pointer;
+}
+
+.boton__crear{
+    background-color: rgba(89, 133, 247, 1);
+    transition: all .2s;
+}
+
+.boton__cancelar{
+    background-color: rgb(247, 54, 54);
+    transition: all .2s;
+}
+
+.boton__crear:hover{
+    background-color: rgb(46, 103, 247);
+    transition: all .2s;
+}
+
+.boton__cancelar:hover{
+    background-color: rgb(228, 40, 40);
+    transition: all .2s;
+}
+
